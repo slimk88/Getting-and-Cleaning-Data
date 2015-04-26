@@ -2,15 +2,16 @@
 
 ### Information about the data
 
-The raw data was obtained via this URL: *http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones*
-The URL used for this analysis is: *https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip*
+The raw data was obtained via this URL: *http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones*.
+
+The URL used for this analysis is: *https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip*.
 
 ### The "run_analysis.R"" script performs the following steps to clean and tidy the raw data:
 
 1. Assigns the URL of the project file to be used in further steps
 2. Downloads the project file in the working directory using the assignment from above and saves the download date
 3. Unzips the downloaded file into the current working directory
-OPTIONAL: Check the name of the unzipped file using list.files()/dir(), in this case the name is: "UCI HAR Dataset"
+(OPTIONAL: Check the name of the unzipped file using list.files()/dir(), in this case the name is: "UCI HAR Dataset")
 4. Reads the "subject_test.txt" file into a table (class = data.frame) and change the column name to "subject"
 5. Reads the *"Y_test.txt"* file into a table (class = data.frame) and change the column name to "activity"
 6. Reads each of the "x_test.txt" and "features.txt" files into tables (class = data.frame)
